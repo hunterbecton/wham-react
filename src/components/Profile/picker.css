@@ -1,0 +1,163 @@
+.uppy-Root {
+    font-family: Roboto, sans-serif !important;
+    color: #282F33 !important;
+}
+
+.uppy-Dashboard--modal .uppy-Dashboard-overlay {
+    background-color: rgba(26, 30, 33, 0.5) !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-inner {
+    background-color: #282F33 !important;
+}
+
+.uppy-Dashboard-close {
+    color: #F2F2F2 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-dropFilesHereHint {
+    color: #F2F2F2 !important;
+    border-color: #00C7EF !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-AddFiles {
+    border-color: #999999 !important;
+}
+
+[data-uppy-drag-drop-supported="true"] .uppy-Dashboard-AddFiles {
+    border: 1px dashed #999999 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-AddFiles-title {
+    color: #F2F2F2 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-browse {
+    color: #00C7EF !important
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-browse:focus {
+    border-bottom: 1px solid #00C7EF !important;
+}
+
+.uppy-Dashboard-dropFilesHereHint {
+    border: 1px dashed #00C7EF !important;
+}
+
+[data-uppy-theme="dark"] .uppy-DashboardContent-bar {
+    background-color: #282F33 !important;
+    border-bottom: 1px solid #333C42 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-DashboardContent-back {
+    color: #00C7EF !important;
+}
+
+[data-uppy-theme="dark"] .uppy-DashboardContent-title {
+    color: #F2F2F2 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-Item-action--remove {
+    color: #999999 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-Item-action--remove:hover {
+    color: #00C7EF !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-Item-name {
+    color: #F2F2F2 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-Item-status {
+    color: #999999 !important;
+}
+
+.uppy-Dashboard-Item-action--edit {
+    color: #999999 !important;
+}
+
+.uppy-Dashboard-Item-action--edit:hover {
+    color: #F2F2F2 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-StatusBar:not([aria-hidden=true]).is-waiting {
+    background-color: #282F33 !important;
+    border-top: 1px solid #333C42 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-StatusBar:before {
+    background-color: #999999 !important;
+}
+
+.uppy-StatusBar-progress {
+    background-color: #00C7EF !important;
+}
+
+[data-uppy-theme="dark"] .uppy-StatusBar.is-waiting .uppy-StatusBar-actions {
+    background-color: #282F33 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-StatusBar.is-waiting .uppy-StatusBar-actionBtn--upload {
+    background-color: #00C7EF !important;
+}
+
+[data-uppy-theme="dark"] .uppy-StatusBar {
+    background-color: #282F33 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-StatusBar-content {
+    color: #F2F2F2 !important;
+}
+
+.uppy-StatusBar.is-complete .uppy-StatusBar-statusIndicator {
+    color: #00C7EF !important;
+}
+
+.uppy-Dashboard-Item.is-complete .uppy-Dashboard-Item-progress svg circle {
+    fill: #00C7EF !important;
+}
+
+.uppy-StatusBar-details {
+    color: #F2F2F2 !important;
+    background-color: #999999 !important;
+}
+
+.uppy-StatusBar-actionCircleBtn svg g circle {
+    fill: #999999 !important;
+}
+
+.uppy-StatusBar-spinner {
+    fill: #00C7EF !important;
+}
+
+.uppy-Dashboard-FileCard-preview {
+    background-color: #00C7EF !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-FileCard-info {
+    background-color: #282F33 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-c-textInput {
+    background-color: #1A1E21 !important;
+    border-color: #1A1E21 !important;
+    color: #F2F2F2 !important;
+}
+
+[data-uppy-theme="dark"] .uppy-Dashboard-FileCard-actions {
+    border-top: 1px solid #333C42 !important;
+    background-color: #282F33 !important;
+}
+
+.uppy-c-btn-primary {
+    background-color: #00C7EF !important;
+}
+
+.uppy-ImageCropper-controls button:nth-last-child(-n+3) {
+    display: none !important;
+}
+
+.uppy-ImageCropper-controls button:hover, .uppy-ImageCropper-controls button:focus {
+    background-color: #00C7EF !important;
+}
