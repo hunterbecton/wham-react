@@ -39,9 +39,7 @@ ReactDOM.render(
               <Privacy path='/privacy' />
               <Tos path='/tos' />
               <Homepage path="/" />
-              <PrivateRoute
-                as={Soundboard}
-                roles={['user', 'pro', 'admin']}
+              <Soundboard
                 path="/soundboard/:sbId"
               />
               <PrivateRoute
