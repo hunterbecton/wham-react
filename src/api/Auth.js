@@ -112,7 +112,7 @@ export const apiResetPassword = async (token, password, passwordConfirm) => {
 export const apiIsLoggedIn = async () => {
   try {
     const res = await fetch(`${process.env.REACT_APP_API_ENDPOINT}/users/isLoggedIn`, {
-      method: 'POST',
+      method: 'GET',
       credentials: 'include',
     })
 
