@@ -29,7 +29,7 @@ import Infinity from '../../images/infinity.svg'
 import Key from '../../images/key.svg'
 import { useAuth } from '../../hooks/useAuth'
 
-const stripePromise = loadStripe('pk_test_51HFi8kD0C39kKgHjteaD3LI3RVQgyIG6VN168QWB0fJg8PqELqC8OBVEXyjAX6xSaUsvSnT4TwxtTefhSmw9sqwj00D3t6JcEi')
+const stripePromise = loadStripe('pk_live_51HFi8kD0C39kKgHjE5ZXplCTM9AUi708a861j9pZRlHKmXLbC4pk9jvFxQF3wV8TrThHUq5ECOLwz8Cfn20lVbsO00XrQv4i9Y')
 
 const Home = () => {
 

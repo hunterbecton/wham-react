@@ -68,7 +68,7 @@ const ResetPassword = () => {
 
             if (res.status === 'success') {
                 toast('Password updated! 🥳')
-                navigate('/dashboard')
+                navigate('/login')
             }
 
             if (res.status === 'fail') {
