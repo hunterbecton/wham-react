@@ -29,7 +29,10 @@ const Navbar = () => {
                     </Fragment>
                 )}
                 {!user && (
-                    <Button onClick={() => navigate('/login')}>Login</Button>
+                    <Fragment>
+                        <NavLink to='/login'>Login</NavLink>
+                        <Button onClick={() => navigate('/signup')}>Join</Button>
+                    </Fragment>
                 )}
             </div>
             <Button onClick={() => setIsMenuOpen(!isMenuOpen)} className='mobile-menu__button'>{isMenuOpen ? "Close" : "Menu"}</Button>
