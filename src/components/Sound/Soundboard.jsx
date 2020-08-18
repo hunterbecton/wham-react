@@ -16,6 +16,7 @@ import EmojiBubbleContainer from '../Emoji/EmojiBubbleContainer'
 import SoundboardHeader from './SoundboardHeader';
 import Loading from '../Loading/Loading';
 import Error from '../Error/Error'
+import SoundboardModal from './SoundboardModal'
 
 let socket
 
@@ -74,7 +75,7 @@ const Soundboard = props => {
     if (!props.sbId) {
       setIsError(true)
     }
-  }, [])
+  }, [props.sbId])
 
   // Set sprite object
   useEffect(() => {
@@ -123,14 +124,14 @@ const Soundboard = props => {
       socket.emit('disconnect')
       socket.off()
     }
-  }, [])
+  }, [props.sbId, setSoundboard])
 
   // Cleanup global emojiQueue on unmount
   useEffect(() => {
     return () => {
       setSoundboard({ type: "RESET_EMOJI" })
     }
-  }, [])
+  }, [setSoundboard])
 
   const [play, { sound }] = useSound(initialData.sprite, {
     onload: () => {
@@ -142,7 +143,7 @@ const Soundboard = props => {
     if (isHowlerLoaded) {
       sound._sprite = spriteObj
     }
-  }, [isHowlerLoaded])
+  }, [isHowlerLoaded, sound._sprite, spriteObj])
 
   const handlePlayClick = (emojiId, emojiNative, i) => {
     socket.emit('sound', i)
@@ -212,6 +213,9 @@ const Soundboard = props => {
 
   return (
     <Fragment>
+      <SoundboardModal>
+
+      </SoundboardModal>
       <MainLayout >
         <SoundboardHeader title={initialData.title} />
         <SoundboardContainer gtm='2rem' gsm='2rem' gts="2rem" gss="2rem">

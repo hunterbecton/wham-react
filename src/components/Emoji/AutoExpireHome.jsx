@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useContext } from "react";
+import React, { Fragment, useEffect } from "react";
 import { useSoundboard } from '../../hooks/useSoundboard'
 
 const AutoExpireHome = ({ children, id }) => {
@@ -9,7 +9,7 @@ const AutoExpireHome = ({ children, id }) => {
         setTimeout(() => {
             setSoundboard({ type: 'REMOVE_EMOJI', payload: { id } })
         }, 9000);
-    }, []);
+    }, [setSoundboard, id]);
 
 
     return <Fragment>{children}</Fragment>;

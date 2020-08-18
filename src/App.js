@@ -15,7 +15,7 @@ const App = ({ children }) => {
 
     runIsLoggedIn()
 
-  }, [location])
+  }, [location, isLoggedIn])
 
   return (
     <Fragment>

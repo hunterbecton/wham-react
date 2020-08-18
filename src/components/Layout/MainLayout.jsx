@@ -1,7 +1,6 @@
 import React from 'react'
 import Grid from '../Layout/Grid'
 import NavBar from '../Navigation/Navbar'
-import Footer from '../Footer/Footer'
 
 const MainLayout = ({ children, margin }) => {
     return (

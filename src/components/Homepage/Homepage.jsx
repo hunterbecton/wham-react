@@ -9,7 +9,6 @@ import { toast } from 'react-toastify';
 import { apiGetSession, apiGetNewCustomerId } from '../../api/Payment'
 import { useSoundboard } from '../../hooks/useSoundboard'
 import homepageSounds from '../Homepage/homepageSounds'
-import HomepageContainer from '../Homepage/HomepageContainer'
 import MaxWidthSection from '../Layout/MaxWidthSection'
 import MainLayout from '../Layout/MainLayout'
 import HomepageHeader from '../Homepage/HomepageHeader'

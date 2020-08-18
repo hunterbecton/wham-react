@@ -24,7 +24,6 @@ import EditorWrapper from '../Editor/EditorWrapper'
 import EditorContainer from './EditorContainer'
 import EditorSection from './EditorSection'
 import EditorSectionTitle from './EditorSectionTitle'
-import EditorText from './EditorText'
 import EditorSelect from './EditorSelect'
 import Button from '../Button/Button'
 import Loading from '../Loading/Loading';
@@ -128,7 +127,7 @@ const SoundboardEditor = props => {
         ],
       })
     }
-  }, [])
+  }, [props.sbId])
 
   const statusOptions = [
     { key: 'Drafted', value: 'drafted' },

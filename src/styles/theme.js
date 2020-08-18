@@ -24,9 +24,8 @@ export default {
         purple2: "#5A27CD",
         pink0: "#FFCCDD",
         pink1: "#FF3377",
-        pink2: "#F50052"
-
-
+        pink2: "#F50052",
+        overlay1: "rgba(26,30,33,0.7)"
     },
     breakpoints: {
         s: "only screen and (max-width: 50rem)",
