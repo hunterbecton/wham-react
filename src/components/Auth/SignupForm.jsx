@@ -88,7 +88,7 @@ const SignupForm = () => {
 
 
   const handleCheckout = async () => {
-    const { session } = await apiGetSession('5f357add0fa1f0135fff5972')
+    const { session } = await apiGetSession('5f3c2e2776180200046c9e68')
 
     const sessionId = session.id
 

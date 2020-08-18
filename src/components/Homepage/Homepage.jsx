@@ -111,7 +111,7 @@ const Home = () => {
             customerId = user.customerId
         }
 
-        const { session } = await apiGetSession('5f357add0fa1f0135fff5972', customerId)
+        const { session } = await apiGetSession('5f3c2e2776180200046c9e68', customerId)
 
         const sessionId = session.id
 
