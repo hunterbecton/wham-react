@@ -9,7 +9,7 @@ const AutoExpireHome = ({ children, id }) => {
         setTimeout(() => {
             setSoundboard({ type: 'REMOVE_EMOJI', payload: { id } })
         }, 9000);
-    }, [setSoundboard, id]);
+    }, []);
 
 
     return <Fragment>{children}</Fragment>;

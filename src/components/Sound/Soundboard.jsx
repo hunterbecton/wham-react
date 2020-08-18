@@ -75,7 +75,7 @@ const Soundboard = props => {
     if (!props.sbId) {
       setIsError(true)
     }
-  }, [props.sbId])
+  }, [])
 
   // Set sprite object
   useEffect(() => {
@@ -124,14 +124,14 @@ const Soundboard = props => {
       socket.emit('disconnect')
       socket.off()
     }
-  }, [props.sbId, setSoundboard])
+  }, [])
 
   // Cleanup global emojiQueue on unmount
   useEffect(() => {
     return () => {
       setSoundboard({ type: "RESET_EMOJI" })
     }
-  }, [setSoundboard])
+  }, [])
 
   const [play, { sound }] = useSound(initialData.sprite, {
     onload: () => {
@@ -143,7 +143,7 @@ const Soundboard = props => {
     if (isHowlerLoaded) {
       sound._sprite = spriteObj
     }
-  }, [isHowlerLoaded, sound._sprite, spriteObj])
+  }, [isHowlerLoaded])
 
   const handlePlayClick = (emojiId, emojiNative, i) => {
     socket.emit('sound', i)

@@ -127,7 +127,7 @@ const SoundboardEditor = props => {
         ],
       })
     }
-  }, [props.sbId])
+  }, [])
 
   const statusOptions = [
     { key: 'Drafted', value: 'drafted' },
