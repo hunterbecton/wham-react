@@ -1,27 +1,22 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment } from 'react'
 import { useLocation } from '@reach/router'
 import { useAuth } from './hooks/useAuth'
 
 const App = ({ children }) => {
+  // const location = useLocation()
 
-  const location = useLocation()
+  // const { isLoggedIn } = useAuth()
 
-  const { isLoggedIn } = useAuth()
+  // useEffect(() => {
+  //   const runIsLoggedIn = async () => {
+  //     await isLoggedIn()
+  //   }
 
-  useEffect(() => {
-    const runIsLoggedIn = async () => {
-      await isLoggedIn()
-    }
+  //   runIsLoggedIn()
 
-    runIsLoggedIn()
+  // }, [location])
 
-  }, [location])
-
-  return (
-    <Fragment>
-      {children}
-    </Fragment>
-  );
+  return <Fragment>{children}</Fragment>
 }
 
-export default App;
+export default App

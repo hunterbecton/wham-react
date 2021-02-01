@@ -85,20 +85,16 @@ const useProvideAuth = () => {
       const res = await apiForgotPassword(email)
 
       return res
-
     } catch (error) {
       return error
     }
-
   }
 
   const resetPassword = async ({ token, password, passwordConfirm }) => {
     try {
-
       const res = await apiResetPassword(token, password, passwordConfirm)
 
       return res
-
     } catch (error) {
       return error
     }
