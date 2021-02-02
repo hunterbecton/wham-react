@@ -1,0 +1,209 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+   * Scoped `.call` for invoke the callback chain.
+   * Returns a function that is to be called with
+   * an `{Array}` of callbacks to invoke.
+   *
+   * @param {Object} store
+   * @return {Function}
+   * @api private
+   */
+
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
+/*!
+ * Cropper.js v1.5.7
+ * https://fengyuanchen.github.io/cropperjs
+ *
+ * Copyright 2015-present Chen Fengyuan
+ * Released under the MIT license
+ *
+ * Date: 2020-05-23T05:23:00.081Z
+ */
+
+/*!
+ * Ensure correct constructor
+ */
+
+/*!
+ * Expose AssertionError constructor
+ */
+
+/*!
+ * Inherit from Error.prototype
+ */
+
+/*!
+ * Module dependencies
+ */
+
+/*!
+ * Oath - Node.js / browser event emitter.
+ * Copyright(c) 2011 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/*!
+ * Primary Exports
+ */
+
+/*!
+ * Primary export
+ */
+
+/*!
+ * Primary exports
+ */
+
+/*!
+ * Return a function that will copy properties from
+ * one object to another excluding any originally
+ * listed. Returned function will create a new `{}`.
+ *
+ * @param {String} excluded properties ...
+ * @return {Function}
+ */
+
+/*!
+ * Statically set name
+ */
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * assertion-error
+ * Copyright(c) 2013 Jake Luer <jake@qualiancy.com>
+ * MIT Licensed
+ */
+
+/*!
+ * simple-assert
+ * Copyright(c) 2013 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/*! https://mths.be/utf8js v2.1.2 by @mathias */
+
+/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/**
+   * Takes a string with placeholder variables like `%{smart_count} file selected`
+   * and replaces it with values from options `{smart_count: 5}`
+   *
+   * @license https://github.com/airbnb/polyglot.js/blob/master/LICENSE
+   * taken from https://github.com/airbnb/polyglot.js/blob/master/lib/polyglot.js#L299
+   *
+   * @param {string} phrase that needs interpolation, with placeholders
+   * @param {object} options with values that will be used to replace placeholders
+   * @returns {string} interpolated
+   */
+
+/**
+ * sechash
+ *
+ * Secure password hashing using salt and keystretching
+ *
+ * @author     James Brumond
+ * @version    0.2.0
+ * @copyright  Copyright 2012 James Brumond
+ * @license    Dual licensed under MIT and GPL
+ */
+
+/** @license
+ *
+ * SoundManager 2: JavaScript Sound for the Web
+ * ----------------------------------------------
+ * http://schillmania.com/projects/soundmanager2/
+ *
+ * Copyright (c) 2007, Scott Schiller. All rights reserved.
+ * Code provided under the BSD License:
+ * http://schillmania.com/projects/soundmanager2/license.txt
+ *
+ * V2.97a.20170601
+ */
+
+/** @license React v0.18.0
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v0.19.1
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**!
+ * @fileOverview Kickass library to create and place poppers near their reference elements.
+ * @version 1.16.1
+ * @license
+ * Copyright (c) 2016 Federico Zivolo and contributors
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+//! moment.js
