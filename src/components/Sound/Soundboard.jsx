@@ -3,7 +3,7 @@ import { navigate } from '@reach/router'
 import io from 'socket.io-client'
 import useSound from 'use-sound'
 import { Emoji } from 'emoji-mart'
-import { generate } from "short-id";
+import { generate } from 'short-id'
 
 import { useSoundboard } from '../../hooks/useSoundboard'
 import { apiGetSoundboard } from '../../api/Soundboard'
@@ -13,15 +13,14 @@ import SoundboardContainer from './SoundboardContainer'
 import AutoExpire from '../Emoji/AutoExpire'
 import EmojiBubble from '../Emoji/EmojiBubble'
 import EmojiBubbleContainer from '../Emoji/EmojiBubbleContainer'
-import SoundboardHeader from './SoundboardHeader';
-import Loading from '../Loading/Loading';
+import SoundboardHeader from './SoundboardHeader'
+import Loading from '../Loading/Loading'
 import Error from '../Error/Error'
 import SoundboardModal from './SoundboardModal'
 
 let socket
 
 const Soundboard = props => {
-
   const { soundboard, setSoundboard } = useSoundboard()
 
   const [initialData, setInitialData] = useState({})
@@ -33,16 +32,16 @@ const Soundboard = props => {
   const [isHowlerLoaded, setIsHowlerLoaded] = useState(false)
 
   const randomNumber = (max, min) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  };
+    return Math.floor(Math.random() * (max - min + 1)) + min
+  }
 
   const randomPosOrNeg = (max, min) => {
-    let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min
 
-    randomNumber *= Math.floor(Math.random() * 2) === 1 ? 1 : -1;
+    randomNumber *= Math.floor(Math.random() * 2) === 1 ? 1 : -1
 
-    return randomNumber;
-  };
+    return randomNumber
+  }
 
   // Load soundboard data
   useEffect(() => {
@@ -108,15 +107,16 @@ const Soundboard = props => {
 
     socket.on('emoji', ({ emojiId, emojiNative }) => {
       setSoundboard({
-        type: "ADD_EMOJI", payload: {
+        type: 'ADD_EMOJI',
+        payload: {
           emojiId,
           emojiNative,
           size: randomNumber(3, 2),
           left: randomNumber(100, 0),
           one: randomPosOrNeg(200, 50),
           two: randomPosOrNeg(200, 50),
-          id: generate()
-        }
+          id: generate(),
+        },
       })
     })
 
@@ -129,7 +129,7 @@ const Soundboard = props => {
   // Cleanup global emojiQueue on unmount
   useEffect(() => {
     return () => {
-      setSoundboard({ type: "RESET_EMOJI" })
+      setSoundboard({ type: 'RESET_EMOJI' })
     }
   }, [])
 
@@ -153,15 +153,16 @@ const Soundboard = props => {
     play({ id: String(i) })
 
     setSoundboard({
-      type: "ADD_EMOJI", payload: {
+      type: 'ADD_EMOJI',
+      payload: {
         emojiId,
         emojiNative,
         size: randomNumber(3, 2),
         left: randomNumber(100, 0),
         one: randomPosOrNeg(200, 50),
         two: randomPosOrNeg(200, 50),
-        id: generate()
-      }
+        id: generate(),
+      },
     })
   }
 
@@ -174,15 +175,16 @@ const Soundboard = props => {
       play({ id: String(i) })
 
       setSoundboard({
-        type: "ADD_EMOJI", payload: {
+        type: 'ADD_EMOJI',
+        payload: {
           emojiId,
           emojiNative,
           size: randomNumber(3, 2),
           left: randomNumber(100, 0),
           one: randomPosOrNeg(200, 50),
           two: randomPosOrNeg(200, 50),
-          id: generate()
-        }
+          id: generate(),
+        },
       })
     }
   }
@@ -213,19 +215,23 @@ const Soundboard = props => {
 
   return (
     <Fragment>
-      <SoundboardModal>
-
-      </SoundboardModal>
-      <MainLayout >
+      <SoundboardModal></SoundboardModal>
+      <MainLayout>
         <SoundboardHeader title={initialData.title} />
-        <SoundboardContainer gtm='2rem' gsm='2rem' gts="2rem" gss="2rem">
+        <SoundboardContainer gtm="2rem" gsm="2rem" gts="2rem" gss="2rem">
           {initialData.sounds.map((sound, i) => (
-            <EmojiButton key={sound.uid} innerRef={el => (buttonRefs.current[i] = el)}
+            <EmojiButton
+              key={sound.uid}
+              innerRef={el => (buttonRefs.current[i] = el)}
               endl="span 2"
               endm="span 2"
               ends="span 3"
-              onClick={() => handlePlayClick(sound.emojiId, sound.emojiNative, i)}
-              onKeyDown={e => handlePlayEnter(sound.emojiId, sound.emojiNative, e, i)}
+              onClick={() =>
+                handlePlayClick(sound.emojiId, sound.emojiNative, i)
+              }
+              onKeyDown={e =>
+                handlePlayEnter(sound.emojiId, sound.emojiNative, e, i)
+              }
             >
               <Emoji
                 emoji={sound.emojiId}
@@ -250,21 +256,23 @@ const Soundboard = props => {
         ))}
       </MainLayout>
       <EmojiBubbleContainer>
-        {soundboard.emojis.emojiQueue.map(({ id, emojiId, emojiNative, size, left, one, two }) => (
-          <AutoExpire key={id} id={id}>
-            <EmojiBubble
-              label={emojiId}
-              symbol={emojiNative}
-              size={size}
-              left={left}
-              one={one}
-              two={two}
-            />
-          </AutoExpire>
-        ))}
+        {soundboard.emojis.emojiQueue.map(
+          ({ id, emojiId, emojiNative, size, left, one, two }) => (
+            <AutoExpire key={id} id={id}>
+              <EmojiBubble
+                label={emojiId}
+                symbol={emojiNative}
+                size={size}
+                left={left}
+                one={one}
+                two={two}
+              />
+            </AutoExpire>
+          ),
+        )}
       </EmojiBubbleContainer>
-    </Fragment>)
-
+    </Fragment>
+  )
 }
 
 export default Soundboard
