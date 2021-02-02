@@ -1,6 +1,4 @@
 import React, { Fragment } from 'react'
-import { useLocation } from '@reach/router'
-import { useAuth } from './hooks/useAuth'
 
 const App = ({ children }) => {
   // const location = useLocation()

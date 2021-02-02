@@ -24,45 +24,43 @@ import Dashboard from './components/Dashboard/Dashboard'
 import UpdateProfileForm from './components/Profile/UpdateProfileForm'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ProvideAuth>
-      <ProvideSoundboard>
-        <ThemeProvider theme={Theme}>
-          <GlobalStyles />
-          <StyledToast />
-          <Router>
-            <Homepage path="/" />
-            <SignupForm path="/signup" />
-            <LoginForm path="/login" />
-            <ForgotPassword path="/forgot-password" />
-            <ResetPassword path="/reset-password" />
-            <Privacy path="/privacy" />
-            <Tos path="/tos" />
-            <Soundboard path="/soundboard/:sbId" />
-            <PrivateRoute
-              as={SoundboardEditor}
-              roles={['user', 'pro', 'admin']}
-              path="/soundboard/create"
-            />
-            <PrivateRoute
-              as={SoundboardEditor}
-              roles={['user', 'pro', 'admin']}
-              path="/soundboard/edit/:sbId"
-            />
-            <PrivateRoute
-              as={Dashboard}
-              roles={['user', 'pro', 'admin']}
-              path="/dashboard"
-            />
-            <PrivateRoute
-              as={UpdateProfileForm}
-              roles={['user', 'pro', 'admin']}
-              path="/profile"
-            />
-          </Router>
-        </ThemeProvider>
-      </ProvideSoundboard>
-    </ProvideAuth>
-  </React.StrictMode>,
+  <ProvideAuth>
+    <ProvideSoundboard>
+      <ThemeProvider theme={Theme}>
+        <GlobalStyles />
+        <StyledToast />
+        <Router>
+          <Homepage path="/" />
+          <SignupForm path="/signup" />
+          <LoginForm path="/login" />
+          <ForgotPassword path="/forgot-password" />
+          <ResetPassword path="/reset-password" />
+          <Privacy path="/privacy" />
+          <Tos path="/tos" />
+          <Soundboard path="/soundboard/:sbId" />
+          <PrivateRoute
+            as={SoundboardEditor}
+            roles={['user', 'pro', 'admin']}
+            path="/soundboard/create"
+          />
+          <PrivateRoute
+            as={SoundboardEditor}
+            roles={['user', 'pro', 'admin']}
+            path="/soundboard/edit/:sbId"
+          />
+          <PrivateRoute
+            as={Dashboard}
+            roles={['user', 'pro', 'admin']}
+            path="/dashboard"
+          />
+          <PrivateRoute
+            as={UpdateProfileForm}
+            roles={['user', 'pro', 'admin']}
+            path="/profile"
+          />
+        </Router>
+      </ThemeProvider>
+    </ProvideSoundboard>
+  </ProvideAuth>,
   document.getElementById('root'),
 )
