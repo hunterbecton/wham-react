@@ -1,7 +1,7 @@
 {
   "name": "wham-react",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://whamboard.com",
   "dependencies": {
     "@reach/router": "^1.3.4",
     "@stripe/stripe-js": "^1.8.0",
